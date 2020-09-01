@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>La Inde</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="imagenes/scout-favicon.png">
+
+
+    
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(imagenes/la-inde2.jpg);">
+        <div class="container">
+            <h1>Grupo Scout<br>
+                <strong>INDEPENDENCIA</strong>
+            </h1>
+            <p>Distrito 1 - Zona 8</p>
+            <button type="button" class="btn btn-flat" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Contactanos</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Envianos un mensaje con tu consulta</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" onsubmit="enviarMail()">
+                            <form>
+
+                                <div class="form-group">
+                                    <input type="text" name="name" data-name="Name" placeholder="Su nombre" maxlength="256" required="" class="form-control" id="su-nombre">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" name="email" data-name="Email" placeholder="Su mail de contacto" maxlength="256" required="" id="su-email" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea data-name="Message" maxlength="5000" required="" name="message" id="su-mensaje" placeholder="Su mensaje..." class="form-control area w-input"></textarea>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="cuerpo">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="titulo-cuerpo">¿Quiénes somos?</h2>
+                <p class="parrafo-cuerpo">Somos el Grupo Scout Independencia, nº401,<br>
+                    del Distrito 1 Zona 8
+                </p>
+
+                <h2 class="titulo-cuerpo">Nuestra misión</h2>
+                <p class="parrafo-cuerpo">La Misión del Movimiento Scout es contribuir a la educación de los jóvenes a través de un sistema de valores basado en la Promesa y la Ley Scout, para ayudar a construir un mundo mejor donde las personas se desarrollen plenamente y jueguen un papel constructivo en la sociedad.<br><br>
+                    Esta Misión se logra:
+                </p><br>
+                <ul class="lista-cuerpo">
+                    <li>Comprometiendo a los jóvenes durante sus años de formación en un proceso de educación no formal</li><br>
+                    <li>Utilizando un método específico que hace de cada joven, principal agente de su desarrollo, una persona segura de sí misma, solidaria, responsable y comprometida</li><br>
+                    <li> Ayudando a los jóvenes a establecer un sistema de valores, basado en principios espirituales, sociales y personales como se expresan en la Promesa y la Ley Scout</li>
+                </ul>
+            </div>
+            <div class="d-none d-sm-none d-md-block col-md-6">
+                <img class="img-cuerpo1" src="imagenes/logo-d1-z8.png" alt="Logo D1 Z8">
+                <img class="img-cuerpo2" src="imagenes/logo-scout2.jpg" alt="Insignia Scout">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo-cuerpo" style="margin-bottom: 40px;">Ramas</h2>
+            </div>
+            <div class="col-12">
+                <div class="cards">
+                    <a href="manada.html">
+                        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagenes/insignia-manada.jpg)">
+                        </div>
+                    </a>
+
+                    <a href="unidad.html">
+                        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagenes/insignia-unidad.jpg)">
+                        </div>
+                    </a>
+
+                    <a href="caminantes.html">
+                        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagenes/insignia-caminantes.jpg)">
+                        </div>
+                    </a>
+
+                    <a href="rovers.html">
+                        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(imagenes/insignia-rovers.jpg)">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacto">
+    <div class="container">
+        <h2 class="titulo-cuerpo" style="margin-top: 50px;">Info de Contacto</h2><hr>
+            <div class="row" style="display: flex;">
+                <div class="col-12 col-md-6 datos-contacto">
+                    <strong>E-mail</strong><i class="fas fa-envelope" style="margin: 20px 10px 20px 10px; color: #555555"></i>
+                    <p><a class="email-contacto" href="mailto: ejemplo@gmail.com?subject=(Nombre%20completo)%20-%20Dreambooks">ejemplo@gmail.com</a></p>
+                    <strong>Teléfono</strong><i class="fas fa-phone" style="margin: 20px 10px 20px 10px; color: #555555"></i>
+                    <p>555 - 555 - 555</p>
+                    <strong>Dirección</strong><i class="fas fa-map-pin" style="margin: 20px 10px 20px 10px; color: #555555"></i>
+                    <p>Los Cerrillos 1920,<br>
+                        William C. Morris,<br>
+                        Provincia de Buenos Aires
+                    </p>
+                </div>
+                <br>
+
+                <div class="d-none d-sm-none d-md-block col-md-6">
+                    <iframe class="map-contacto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3284.8402780426445!2d-58.6544075!3d-34.5829078!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbeae625a875b%3A0x3a9e7bac0fe750ff!2sGrupo%20Scout%20Independencia!5e0!3m2!1ses-419!2sar!4v1598754453834!5m2!1ses-419!2sar" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/lainde_scout/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/groups/255340694543479"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="footer-copyright">
+            G.S. Independencia <i class="far fa-copyright"></i> 2020 <i class="fas fa-heart"></i>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+    function enviarMail() {
+        const textoNombre = document.getElementById("su-nombre").value;
+        const asunto = "Solicitud de contacto - " + textoNombre;
+
+        const textoMail = document.getElementById("su-email").value;
+
+        const mensaje = document.getElementById("su-mensaje").value;
+
+        const mailto = "mailto:ejemplo@gmail.com?Subject=" + asunto +"&body=" + textoMail + "     " + mensaje;
+        window.open(mailto);
+    }
+</script>
+</body>
+</html>
