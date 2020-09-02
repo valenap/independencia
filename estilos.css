@@ -151,6 +151,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     height: 100px;
     padding: 0 50px;
     color: rgba(0,0,0,0.3);
@@ -181,6 +182,17 @@
 
 /* PERFILES */
 
+.banner-ramas {
+    margin-top: -65px;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .banner-ramas {
+        padding-left: 15px;
+    }
+}
+
 .foto-portada {
     border-radius: 50%;
     width: 400px;
@@ -208,6 +220,12 @@
         display: block;
         transition: all 500ms ease;
     }
+}
+
+.titulo-cuerpo-portadas {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 250px auto 100px;
 }
 
 .back {
